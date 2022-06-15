@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Narrow:ital,wght@1,400;1,500&family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "poppins", sans-serif;
+}
+
+/*;, ) */
+body {
+    background: radial-gradient(circle, #8E2DE2  0%, #4A00E0 122%);
+    color: rgb(250, 243, 248);
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.login__container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    width: 75%;
+}
+
+form label {
+    padding-bottom: 10px;
+}
+
+form input {
+    margin-bottom: 10px;
+    height: 30px;
+    border: none;
+    border-radius: 15px;
+    padding: 0 20px;
+}
+
+input:focus {
+    outline: none;
+}
+
+.btn {
+    background-color: #0c022b7c; 
+    color: aliceblue; 
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background: #050505ce;
+}
+
+.login__img {
+    display: none;
+}
+
+/*media queries*/
+@media screen and (min-width: 1000px) {
+    .login__container {
+        background-color: #e41809b7;
+        max-width: 700px;
+        border-radius: 20px;
+        min-height: 200px;
+        max-height: 300px;
+        height: 60%;
+        box-shadow: 0 0 26px rgb(0, 0, 0, 0.6);
+}
+
+.login__img {
+    display: block;
+    height: 100%;
+    width: 100%;
+    background: url("/imagenes/accesologin.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 0 20px 20px 0;
+}
+
+form {
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    padding: 20px 60px;
+}
+}
